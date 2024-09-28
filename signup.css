@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #ffeef8; Light pink background */
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+    text-align: center;
+    border: 2px solid #ff77a9; /* Pink border */
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: lightskyblue; /* Pink background */
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between button and heading */
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #ff4d88; /* Darker pink on hover */
+}
+
+h1 {
+    color: black ; /* Darker pink for the header */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #333; /* Dark text for readability */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ff77a9; /* Pink border for inputs */
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff4d88; /* Darker pink on focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: lightgreen; /* Pink button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green; /* Darker pink on hover */
+}
+
+.login-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-prompt a {
+    color: #ff77a9; /* Pink link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Slightly smaller heading */
+    }
+
+    button {
+        font-size: 15px; /* Slightly smaller button text */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    button {
+        padding: 10px; /* Less padding on buttons */
+        font-size: 14px; /* Smaller button text */
+    }
+
+    .input-group {
+        margin-bottom: 10px; /* Less margin for inputs */
+    }
+}

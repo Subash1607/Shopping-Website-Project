@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shopping Website</title>
+    <style>
+     * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Soft cyan background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative; /* Position relative for the back button */
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+    text-align: center;
+}
+
+.back-button {
+    position: absolute; /* Absolute positioning */
+    top: 10px;
+    left: 10px;
+    font-size: 24px; /* Larger font for the arrow */
+    color: #00796b; /* Teal color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+h1 {
+    color: #00695c; /* Darker teal for the header */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #333; /* Dark text for readability */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b2dfdb; /* Light teal border for inputs */
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #00796b; /* Darker teal on focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b; /* Teal button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+.signup-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-prompt a {
+    color: #00796b; /* Teal link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Slightly smaller heading */
+    }
+
+    button {
+        font-size: 15px; /* Slightly smaller button text */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    button {
+        padding: 10px; /* Less padding on buttons */
+        font-size: 14px; /* Smaller button text */
+    }
+
+    .input-group {
+        margin-bottom: 10px; /* Less margin for inputs */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index1.html" class="back-button">&#8592;</a> <!-- Left arrow -->
+        <h1>Login</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-prompt">Don't have an account? <a href="./signup.html">Sign up here</a>.</p>
+    </div>
+</body>
+</html>
